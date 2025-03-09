@@ -103,6 +103,11 @@ def process_file(file_path: str, output_dir: Optional[str] = None, no_output: bo
     try:
         # Parse file and create DataFrames
         cpu_df, memory_df = parse_data(file_path)
+
+        # filter out the last anything above the last 500 rows
+        cpu_df = cpu_df.iloc[-10000:]
+        memory_df = memory_df.iloc[-10000:]
+
         print_dataframe_info(cpu_df, memory_df)
         
         # Skip output if requested

@@ -36,7 +36,7 @@ def get_sample_files() -> List[Path]:
         List of file paths
     """
     data_dir = Path(__file__).parent / "data"
-    return sorted(data_dir.glob("pidstats_*.log"))
+    return sorted(data_dir.glob("pidstats*.log"))
 
 def display_summary_metrics(cpu_df: pd.DataFrame, memory_df: pd.DataFrame):
     """Display summary metrics in the app.

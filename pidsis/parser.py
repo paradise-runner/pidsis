@@ -3,7 +3,8 @@
 from typing import List, Dict, Tuple, Any, Optional
 from datetime import datetime
 import re
-from utils import read_file_lines
+from pidsis.utils import read_file_lines
+
 
 # Global variable to store the current date context
 _current_date = None

@@ -177,7 +177,7 @@ Invalid data line
 def test_real_world_data():
     """Test parsing and DataFrame creation with real world pidstats data"""
     # Use the real pidstats log file
-    real_data_path = Path(__file__).parent.parent / "pidsis" / "data" / "pidstats_2025-03-02_15-18-09.log"
+    real_data_path = Path(__file__).parent.parent / "pidsis" / "data" / "pidstats.log"
     
     # Parse the file into raw data
     cpu_data, memory_data = parser.parse_pidstats_file(str(real_data_path))
