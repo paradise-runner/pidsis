@@ -2,6 +2,8 @@
 
 A Python package for parsing pidstats log files into pandas DataFrames.
 
+![pidsis](./pidsis.png)
+
 ## Notes:
 Assumes uv is installed and available in the PATH.
 - `uv` is a command line tool that allows you to run Python scripts with a virtual environment.
